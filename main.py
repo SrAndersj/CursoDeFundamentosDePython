@@ -1,18 +1,22 @@
-# This is a sample Python script.
-
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
+def print_typeVariable(name):
+
+    print(f'el tipo de variable es:{type(name)}')
+
+    print(f'el tipo de variable es:{type(name).__name__}')
+
+def print_input(entrada):
+
+    print(f'El valor ingresado es : {entrada} y el tipo de dato es {type(entrada).__name__}')
 
 
-    print(f'Hi, {name}')  # Press Ctrl+8 to toggle the breakpoint.
 
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    print_typeVariable('PyCharm')
+    print("--------")
+    print_typeVariable(23)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    entrada = input("escribe un numer o letra")
+
+    print_input(entrada)
