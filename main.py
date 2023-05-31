@@ -1,22 +1,21 @@
 
 
-def print_typeVariable(name):
+def print_full_name(name,last_name):
+    full_name = name + ' '+ last_name
 
-    print(f'el tipo de variable es:{type(name)}')
+    print(full_name)
 
-    print(f'el tipo de variable es:{type(name).__name__}')
+def print_full_name_format(name,last_name):
 
-def print_input(entrada):
-
-    print(f'El valor ingresado es : {entrada} y el tipo de dato es {type(entrada).__name__}')
-
+    template ="hola , mi nombre es {} y mis apellidos son {}".format(name,last_name)
+    print(template)
+    print("#-------")
+    template = f'hola soy {name} usando f form'
+    print(template)
 
 
 if __name__ == '__main__':
-    print_typeVariable('PyCharm')
-    print("--------")
-    print_typeVariable(23)
+    print_full_name('nicolas','Molina Monroy')
+    print("---")
+    print_full_name_format('Nicolas', 'Molina Monroy')
 
-    entrada = input("escribe un numer o letra")
-
-    print_input(entrada)
