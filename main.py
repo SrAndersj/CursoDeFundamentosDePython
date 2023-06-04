@@ -1,16 +1,27 @@
 
 
-def print_booleans(number):
-    is_single =True
-    print(type(is_single))
+def print_transformation(item):
+    print(type(item))
 
-    print(not True )
+    item =12
+    print(type(item))
 
-    print(is_single)
-    print(not is_single)
+    age=20
+
+    print("mi edad es "+ str(age))
+    print(f"mi edad es{age}")
+
+    age = input("edad")
+
+    age=int(age)
+
+    print(f"mi edad es{age+10}")
+
+
+
 
 
 if __name__ == '__main__':
-    print_booleans(2)
+    print_transformation("Nicolas")
 
 
